@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A684F721B0390B00B93810 /* MallCitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A684F621B0390B00B93810 /* MallCitySDK.framework */; };
+		84A684F821B0390B00B93810 /* MallCitySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A684F621B0390B00B93810 /* MallCitySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84F9EBA521AEA1DD0076DA93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9EBA421AEA1DD0076DA93 /* AppDelegate.m */; };
 		84F9EBA821AEA1DD0076DA93 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9EBA721AEA1DD0076DA93 /* MasterViewController.m */; };
 		84F9EBAB21AEA1DD0076DA93 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9EBAA21AEA1DD0076DA93 /* DetailViewController.m */; };
@@ -35,7 +37,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84A684F921B0390B00B93810 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84A684F821B0390B00B93810 /* MallCitySDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		84A684F621B0390B00B93810 /* MallCitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MallCitySDK.framework; sourceTree = "<group>"; };
 		84F9EBA021AEA1DD0076DA93 /* MallAndCityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MallAndCityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F9EBA321AEA1DD0076DA93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84F9EBA421AEA1DD0076DA93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A684F721B0390B00B93810 /* MallCitySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +122,7 @@
 		84F9EBA221AEA1DD0076DA93 /* MallAndCityApp */ = {
 			isa = PBXGroup;
 			children = (
+				84F9EBD821AEA1F10076DA93 /* Framework */,
 				84F9EBA321AEA1DD0076DA93 /* AppDelegate.h */,
 				84F9EBA421AEA1DD0076DA93 /* AppDelegate.m */,
 				84F9EBA621AEA1DD0076DA93 /* MasterViewController.h */,
@@ -137,6 +156,14 @@
 			path = MallAndCityAppUITests;
 			sourceTree = "<group>";
 		};
+		84F9EBD821AEA1F10076DA93 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				84A684F621B0390B00B93810 /* MallCitySDK.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +174,7 @@
 				84F9EB9C21AEA1DD0076DA93 /* Sources */,
 				84F9EB9D21AEA1DD0076DA93 /* Frameworks */,
 				84F9EB9E21AEA1DD0076DA93 /* Resources */,
+				84A684F921B0390B00B93810 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,6 +471,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRX2D499TT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/admin/Documents/Entersekt/MallAndCityApp/MallAndCityApp/Framework;
 				INFOPLIST_FILE = MallAndCityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +493,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRX2D499TT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/admin/Documents/Entersekt/MallAndCityApp/MallAndCityApp/Framework;
 				INFOPLIST_FILE = MallAndCityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

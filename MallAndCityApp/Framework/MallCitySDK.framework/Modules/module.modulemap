@@ -1,0 +1,6 @@
+framework module MallCitySDK {
+  umbrella header "MallCitySDK.h"
+
+  export *
+  module * { export * }
+}
